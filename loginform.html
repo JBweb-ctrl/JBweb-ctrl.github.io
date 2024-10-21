@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Individual Assignment 2</title>
+    <style>
+        body {background-image: url('wavywhite.jpg');}
+        img {display: block; margin-left: auto; margin-right: auto;}
+        h3 {text-align: center;}
+		h1 {text-align: center;}
+        
+		form {text-align: center;}
+        label {display: block; text-align: center;}
+		
+		body.parallax {background: url('../Assets/wavywhite.jpg') no-repeat center center; 
+                   background-attachment: fixed;
+                   background-size: cover;
+                  }
+			
+        input {
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Unique CSS rule*/
+        }
+		input.login {
+		    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+            font-style: italic; 
+			font-weight: bold;
+		    border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Unique CSS rule*/
+            width: 180px; /* New rule to make it wider */
+            background-color: white;
+			}
+    </style>
+	 <link rel="stylesheet" type="text/css" href="navigation.css">
+</head>
+<body class="parallax">
+    <p><img src="../Assets/jbbusinesslogo.jpg" width="300" height="290"></p>
+    <h1><center>Welcome to JB Electronics!</center></h1>
+	<h2><center><i>“The Best Tech Outlet in the West Doing it Better than the Rest”</i></center></h3>
+	<h3>Please Login to Enter</h3>
+    <form id="loginForm" name="form1">
+        <label style="display: block; text-align: center;"><b><i>Username:</i></b></label>
+        <input type="text" name="num1" id="username" style="border-radius: 5px; display: block; margin: 10px auto;" required /><br>
+        
+		<label style="display: block; text-align: center;"><b><i>E-mail Address:</i></b></label>
+        <input type="email" name="num2" id="email" style="border-radius: 5px; display: block; margin: 10px auto;" required /><br>
+        
+		<label style="display: block; text-align: center;"><b><i>Password:</i></b></label>
+        <input type="password" name="num3" id="password" style="border-radius: 5px; display: block; margin: 10px auto;" required minlength="8" /><br>
+        
+		<input class="login" type="submit" value="Login" style="display: block; margin: 10px auto; border-radius: 5px;" />
+    </form>
+    <script src="loginscript.js"></script>
+</body>
+<footer>
+		<nav>
+        <ul class="nav-list">
+            <li><a href="aboutus.html" target="_self">About Us</a></li>
+        </ul>
+    </nav>
+	</footer>
+</html>

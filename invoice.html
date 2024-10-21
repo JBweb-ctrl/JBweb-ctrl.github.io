@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <style>
+       body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+		table {width: 80%; 
+		border-collapse: collapse;
+		border: 2px solid purple; /* Purple border */
+        box-shadow: 0 0 10px purple; /* Unique Css Rule */
+		}
+        
+		th, td {border: 1px solid black; padding: 8px; text-align: left; background: rgba(255, 255, 255, 0.8);}
+        
+		.parallax {background: url('../Assets/wavywhite.jpg') no-repeat center center; /*used to make background image float instead of background moving*/
+                   background-attachment: fixed;
+                   background-size: cover;
+                  }
+		
+		#invoice-table {
+            background: url('../Assets/invoiceimg.jpg') center;
+            background-size: contain;
+			background-clip: content-box;
+        }
+		
+		h2 {
+            position: fixed;
+            top: 20px;
+			}
+		
+		.buttons {
+			position: absolute;
+            bottom: 20px;
+			display: flex; 
+            justify-content: center; 
+            margin-top: 20px;
+        }
+		p {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.buttons button {
+            font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+            font-style: italic; /* Make it italic */
+            font-weight: bold; /* Make it bold */
+            border-radius: 5px; 
+            margin: 10px; 
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            width: 150px;
+            background-color: #9e58de;
+            color: white; /* Ensures text is readable on purple background */
+            padding: 10px; /* Adds padding inside buttons */
+        }
+
+    </style>
+</head>
+<body class="parallax" background="../Assets/wavywhite.jpg">
+<p><img src="../Assets/jbbusinesslogo.jpg" width="100" height="95" style="display: block;"></p>
+    <h2>Invoice</h2>
+    <table id="invoice-table">
+        <thead>
+            <tr>
+                <th>Item Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="invoice-body">
+            <!-- Invoice items will be appended -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Grand Total</th>
+                <th id="grand-total">$0.00</th>
+            </tr>
+        </tfoot>
+    </table>
+<div class="buttons">
+        <button class="cancel">Cancel</button>
+        <button class="exit">Exit</button>
+    </div>
+    <script src="invoicescript.js"></script>
+</body>
+
+</html>
