@@ -35,5 +35,5 @@ document.querySelector('.cancel').addEventListener('click', function() {
 
 document.querySelector('.exit').addEventListener('click', function() {
 	alert('Exiting Website \nThanks for shopping with us!');
-    window.location.href = 'loginform.html';
+    window.location.href = 'index.html';
 });
